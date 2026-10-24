@@ -11,6 +11,7 @@
     --line: rgba(255, 255, 255, .14);
     --radius: 22px;
     --max: 1180px;
+    --content-gutter: clamp(1.25rem, 5vw, 4rem);
     --display: "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
     --body: Inter, Segoe UI, Arial, sans-serif;
     --scale: 1
@@ -333,6 +334,9 @@ p {
 }
 
 .header-inner {
+    width: auto;
+    max-width: none;
+    margin-inline: var(--content-gutter);
     min-height: 78px;
     display: flex;
     align-items: center;
@@ -416,6 +420,9 @@ p {
 .hero-content {
     position: relative;
     z-index: 1;
+    width: auto;
+    max-width: var(--max);
+    margin-inline: var(--content-gutter);
     padding: clamp(5rem, 10vw, 9rem) 0 4.5rem;
     min-width: 0
 }

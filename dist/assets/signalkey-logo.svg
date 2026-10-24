@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-labelledby="title">
+  <title id="title">SignalKey</title>
+  <g fill="none" stroke="#39c9ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+    <path d="M47 12 78 30v36L47 84 16 66V30z"/>
+    <path d="M31 49h14l9-10 10 10h9"/>
+    <circle cx="29" cy="49" r="3" fill="#39c9ef" stroke="none"/>
+    <path d="M58 49v10h11"/>
+    <circle cx="73" cy="59" r="3" fill="#39c9ef" stroke="none"/>
+  </g>
+  <text x="98" y="63" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700" letter-spacing="-1.5">Signal<tspan fill="#39c9ef">Key</tspan></text>
+</svg>

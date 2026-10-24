@@ -63,14 +63,14 @@ contactForm?.addEventListener("submit", (e) => {
     const body = encodeURIComponent(
         `Nombre: ${data.get("name")}\nTeléfono: ${data.get("phone")}\n\n${data.get("message")}`
     );
-    window.location.href = `mailto:info@fixitea.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hello@signalkey.example?subject=${subject}&body=${body}`;
 });
 const mapsUrl =
-    "https://www.google.com/maps/search/?api=1&query=C.%20Padre%20%C3%81lvarez%2030%2C%2021400%20Ayamonte%2C%20Huelva";
+    "https://www.google.com/maps/search/?api=1&query=Ayamonte%2C%20Huelva%2C%20Spain";
 const mapsEmbed =
-    "https://www.google.com/maps?q=C.%20Padre%20%C3%81lvarez%2030%2C%2021400%20Ayamonte%2C%20Huelva&output=embed";
+    "https://www.google.com/maps?q=Ayamonte%2C%20Huelva%2C%20Spain&output=embed";
 document.querySelectorAll(".map-art").forEach((placeholder) => {
-    placeholder.outerHTML = `<div class="map-preview"><iframe src="${mapsEmbed}" title="Mapa de FIXITEA en C. Padre Álvarez, 30, Ayamonte" loading="lazy" tabindex="-1" aria-hidden="true"></iframe><a class="map-preview-link" href="${mapsUrl}" target="_blank" rel="noopener" aria-label="Abrir la ubicación de FIXITEA en Google Maps"></a></div>`;
+    placeholder.outerHTML = `<div class="map-preview"><iframe src="${mapsEmbed}" title="Mapa general de Ayamonte en Google Maps" loading="lazy" tabindex="-1" aria-hidden="true"></iframe><a class="map-preview-link" href="${mapsUrl}" target="_blank" rel="noopener" aria-label="Buscar Ayamonte en Google Maps"></a></div>`;
 });
 const contactTitle = document.querySelector(".page-hero h1");
 if (contactTitle?.textContent.includes("Contacto")) {
@@ -78,8 +78,8 @@ if (contactTitle?.textContent.includes("Contacto")) {
     titleRow.className = "contact-title-row";
     const phone = document.createElement("a");
     phone.className = "contact-hero-phone";
-    phone.href = "tel:+34662138031";
-    phone.innerHTML = "<small>Llámanos</small><strong>662 13 80 31</strong>";
+    phone.href = "tel:+34000000000";
+    phone.innerHTML = "<small>Llámanos</small><strong>+34 000 000 000</strong>";
     contactTitle.before(titleRow);
     titleRow.append(contactTitle, phone);
 }
