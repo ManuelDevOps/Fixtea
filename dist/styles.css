@@ -603,6 +603,12 @@ p {
     color: #fff
 }
 
+.split-copy h2 {
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none
+}
+
 .split-copy p {
     color: var(--muted);
     max-width: 52ch
